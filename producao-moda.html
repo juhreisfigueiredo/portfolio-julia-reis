@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Produção de Moda | Julia Reis</title>
+<meta name="description" content="Editorial de moda e shooting — produção e styling de Julia Reis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#242321;--ink:#eee9e1;--muted:#c9c2b8;--line:rgba(238,233,225,.34)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;font-weight:300}
+a{color:inherit}
+.site-header{padding:25px 18px 8px;text-align:center}
+.logo{width:min(170px,42vw);height:auto;max-height:105px;object-fit:contain}
+.back{display:block;width:max-content;margin:0 auto 13px;color:var(--muted);font-size:11px;letter-spacing:.16em;text-decoration:none;text-transform:uppercase}
+.rule{width:min(86%,1120px);border:0;border-top:1px solid var(--line);margin:0 auto 13px}
+h1,h2{font-family:"Playfair Display",Georgia,serif;font-weight:400;text-align:center;text-transform:uppercase;letter-spacing:.17em}
+h1{font-size:clamp(18px,2.2vw,27px);margin:8px 0 26px}
+h2{font-size:clamp(17px,2vw,23px);margin:0 0 27px}
+.content{width:min(1240px,94vw);margin:0 auto 65px}
+.triptych{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.08fr) minmax(0,.82fr);gap:clamp(12px,2vw,26px);align-items:center}
+.photo{display:block;margin:0;padding:4px;border:1px solid rgba(238,233,225,.28);background:#2c2a27;line-height:0}
+.photo img{display:block;width:100%;height:auto;object-fit:cover}
+.triptych .photo:first-child img,.triptych .photo:last-child img{aspect-ratio:3/4;object-fit:cover}
+.triptych .photo:nth-child(2) img{aspect-ratio:4/5;object-fit:cover}
+.credits{text-align:center;margin:13px auto 29px;color:var(--muted);font-size:12px;line-height:1.9;letter-spacing:.035em}
+.credits b{color:#fff;font-weight:500}
+.video-row{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.08fr) minmax(0,.82fr);gap:clamp(12px,2vw,26px);align-items:center}
+.video-frame{position:relative;display:block;width:100%;padding:4px;border:1px solid rgba(238,233,225,.3);background:#302d29;aspect-ratio:16/9;overflow:hidden}
+.video-frame img{width:100%;height:100%;display:block;object-fit:cover;filter:brightness(.8)}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:52px;border:1px solid rgba(255,255,255,.9);border-radius:50%;display:grid;place-items:center;background:rgba(0,0,0,.25)}
+.play:after{content:"";margin-left:4px;border-top:9px solid transparent;border-bottom:9px solid transparent;border-left:13px solid #fff}
+.divider{width:min(86%,1120px);border:0;border-top:1px solid var(--line);margin:46px auto 45px}
+.note{margin:0 auto 20px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+@media(max-width:700px){
+ .site-header{padding-top:18px}
+ .content{width:92vw;margin-bottom:42px}
+ .triptych,.video-row{grid-template-columns:1fr 1.2fr 1fr;gap:7px}
+ .photo,.video-frame{padding:2px}
+ .credits{font-size:10px;margin:10px auto 19px}
+ .divider{margin:30px auto}
+ .play{width:38px;height:38px}
+ .play:after{border-top-width:7px;border-bottom-width:7px;border-left-width:10px}
+}
+@media(max-width:420px){
+ .triptych,.video-row{grid-template-columns:1fr 1.25fr 1fr;gap:5px}
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+<a class="back" href="index.html">← Voltar à capa</a>
+<img class="logo" src="logo.png" alt="Julia Reis">
+<hr class="rule">
+</header>
+<main class="content">
+<h1>Editorial de Moda</h1>
+<section class="triptych" aria-label="Editorial de moda — três fotografias">
+<a class="photo" href="left.jpeg" target="_blank" rel="noopener"><img src="left.jpeg" alt="Modelo em pé com casaco de tweed — vista frontal"></a>
+<a class="photo" href="center.jpeg" target="_blank" rel="noopener"><img src="center.jpeg" alt="Retrato da modelo com casaco de tweed"></a>
+<a class="photo" href="right.jpeg" target="_blank" rel="noopener"><img src="right.jpeg" alt="Modelo em pé com casaco de tweed — pose lateral"></a>
+</section>
+<div class="credits">
+<div>Produção &amp; Styling: <b>Julia Reis</b></div>
+<div>Foto: <b>Gabriel Gessley</b></div>
+<div>Modelo: <b>Isadora Marcellos</b></div>
+</div>
+<section class="video-row" aria-label="Fotografia, vídeo e fotografia">
+<a class="photo" href="left2.jpeg" target="_blank" rel="noopener"><img src="left2.jpeg" alt="Modelo agachada com casaco de tweed"></a>
+<a class="video-frame" href="https://www.youtube.com/watch?v=ELLLVUhFHos" target="_blank" rel="noopener" aria-label="Assistir ao fashion film no YouTube">
+<img src="https://img.youtube.com/vi/ELLLVUhFHos/hqdefault.jpg" alt="Capa do vídeo de editorial">
+<span class="play" aria-hidden="true"></span>
+</a>
+<a class="photo" href="https://raw.githubusercontent.com/juhreisfigueiredo/juhreisfigueiredo.github.io/main/right2.jpeg" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/juhreisfigueiredo/juhreisfigueiredo.github.io/main/right2.jpeg" alt="Modelo sentada no chão com blazer xadrez"></a>
+</section>
+<hr class="divider">
+<p class="note">Primeira etapa do editorial</p>
+</main>
+</body>
+</html>
